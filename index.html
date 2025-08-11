@@ -1,0 +1,36 @@
+<main class="container">
+    <h1>Weather</h1>
+    <form id="search-form" class="bar">
+      <input id="location-input" type="text" placeholder="City, ZIP/Postal, Landmark, or 'lat,lon' (e.g., 40.71,-74.0)" />
+      <select id="units">
+        <option value="metric">°C</option>
+        <option value="imperial">°F</option>
+      </select>
+      <button type="submit">Search</button>
+      <button type="button" id="loc-btn">Use My Location</button>
+    </form>
+  
+    <p id="status" class="status"></p>
+  
+    <section id="current" class="card"></section>
+    <section id="forecast" class="forecast"></section>
+    <section class="card" style="margin-top:16px">
+      <h2 style="margin:0 0 8px">Save a date-range temperature record</h2>
+      <form id="range-form" class="bar">
+        <input id="range-location" type="text" placeholder="Location (defaults to search box)" />
+        <input id="start-date" type="date" />
+        <input id="end-date" type="date" />
+        <button type="submit">Save to DB</button>
+        <button type="button" id="export-btn" title="Download CSV of all records">Export CSV</button>
+      </form>
+      <p id="range-status" class="status"></p>
+      <div id="records"></div>
+    </section>
+  </main>
+
+  ...
+  <script src="./app.js?v=3" defer></script>
+</body>
+</html>
+
+  

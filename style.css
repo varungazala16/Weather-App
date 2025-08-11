@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0f172a; color: #e2e8f0;
+}
+.container {
+  max-width: 880px; margin: 32px auto; padding: 0 16px;
+}
+h1 { margin-top: 0; }
+
+.bar {
+  display: flex; gap: 8px; margin: 16px 0 8px;
+}
+.bar input, .bar select, .bar button {
+  padding: 10px 12px; border-radius: 8px; border: 1px solid #334155; background: #111827; color: #e5e7eb;
+}
+.bar button { cursor: pointer; }
+
+.status { min-height: 1.2em; color: #94a3b8; }
+
+.card {
+  background: #111827; border: 1px solid #334155; border-radius: 12px; padding: 16px; margin-top: 12px;
+}
+
+.current-header {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.current-header img { width: 64px; height: 64px; }
+
+.current-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 12px;
+}
+
+.kv { background: #0b1220; border: 1px solid #243244; border-radius: 8px; padding: 8px 10px; }
+.kv .k { color: #9ca3af; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.kv .v { font-size: 18px; margin-top: 4px; }
+
+.forecast {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 12px;
+}
+.day {
+  background: #111827; border: 1px solid #334155; border-radius: 12px; padding: 12px; text-align: center;
+}
+.day h3 { margin: 6px 0 2px; font-size: 16px; }
+.day img { width: 56px; height: 56px; }
+.day .temps { font-weight: 600; margin-top: 6px; }
+.records-table {
+    width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;
+  }
+  .records-table th, .records-table td {
+    border: 1px solid #334155; padding: 8px; vertical-align: top;
+  }
+  .records-table th { background: #0b1220; text-align: left; }
+  .btn {
+    padding: 6px 10px; border-radius: 6px; border: 1px solid #334155; background:#0f172a; color:#e5e7eb; cursor:pointer;
+  }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+  
